@@ -30,3 +30,15 @@ Y is (100, 90)
 Calculating norms for comparison:
 xtx - yty norm = 	556193082.7305417
 norm(X)^2/l = 		2431163565.38
+
+
+Loading data..
+Data loaded.
+l = 100
+n = 463715
+d = 90
+X is (463715, 90)
+Y is (100, 90)
+Calculating norms for comparison:
+xtx - yty norm =        27492127133.94384
+norm(X)^2/l =           1.13311437396e+11
