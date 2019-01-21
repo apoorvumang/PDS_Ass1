@@ -1,7 +1,7 @@
 f = open("data/data.txt", "r")
-fw = open("data/small.txt", "w")
+fw = open("data/50k.txt", "w")
 
-maxLines = 10000
+maxLines = 50000
 n = 0
 for line in f:
 	fw.write(line)
