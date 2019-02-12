@@ -1,10 +1,6 @@
-f = open("data/data.txt", "r")
-fw = open("data/50k.txt", "w")
+import numpy as np
+import math
+import datetime
 
-maxLines = 50000
-n = 0
-for line in f:
-	fw.write(line)
-	n += 1
-	if(n >= maxLines):
-		break
+print(datetime.datetime.now())
+print "Loading data.."

@@ -15,7 +15,9 @@ def isRowZero(row):
 l = 250
 print(datetime.datetime.now())
 print "Loading data.."
-X = np.loadtxt('data/data_no_target.txt', delimiter=',')
+# X = np.loadtxt('data/data_no_target.txt', delimiter=',')
+# np.save("data/data_numpy.npy", X)
+X = np.load("data/data_numpy.npy")
 Y = np.zeros((l, X.shape[1]))
 d = X.shape[1]
 n = X.shape[0]
@@ -62,6 +64,13 @@ while i < n:
 		new_s_matrix[j][j] = new_s[j]
 	Y = np.matmul(new_s_matrix, vh)
 
+print("Writing data to file...")
+np.save("data/l_" + str(l) + ".npy", Y)
+print("Binary file written. Now writing text file...")
+np.savetxt('data/l_' + str(l) + ".txt", Y, delimiter=',')
+print("Text file written")
+
+print(datetime.datetime.now())
 print "Calculating norms for comparison:"
 yty = np.matmul(Y.T, Y)
 xtx = np.matmul(X.T, X)
@@ -69,3 +78,4 @@ norm = np.linalg.norm(xtx - yty)
 print "xtx - yty norm = \t" + str(norm)
 print "norm(X)^2/l = \t\t" + str(math.pow(np.linalg.norm(X), 2)/l)
 print(datetime.datetime.now())
+
