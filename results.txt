@@ -42,3 +42,49 @@ Y is (100, 90)
 Calculating norms for comparison:
 xtx - yty norm =        27492127133.94384
 norm(X)^2/l =           1.13311437396e+11
+
+
+
+2019-02-12 11:57:58.369365
+Loading data..
+Data loaded.
+l = 500
+n = 463715
+d = 90
+X is (463715, 90)
+Y is (500, 90)
+2019-02-12 11:58:39.050353
+Calculating norms for comparison:
+xtx - yty norm = 	16123357.885112181
+norm(X)^2/l = 		22662287479.1
+2019-02-12 11:58:56.707893
+
+
+2019-02-12 12:00:07.414110
+Loading data..
+Data loaded.
+l = 1000
+n = 463715
+d = 90
+X is (463715, 90)
+Y is (1000, 90)
+2019-02-12 12:00:47.865764
+Calculating norms for comparison:
+xtx - yty norm = 	16123357.798824161
+norm(X)^2/l = 		11331143739.6
+2019-02-12 12:01:26.301347
+
+
+2019-02-12 12:02:21.584651
+Loading data..
+Data loaded.
+l = 250
+n = 463715
+d = 90
+X is (463715, 90)
+Y is (250, 90)
+2019-02-12 12:03:01.774514
+Calculating norms for comparison:
+xtx - yty norm = 	16123357.99895073
+norm(X)^2/l = 		45324574958.2
+2019-02-12 12:03:19.898169
