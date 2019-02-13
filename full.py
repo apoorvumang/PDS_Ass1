@@ -48,9 +48,10 @@ print "Training done."
 
 y_predict = clf.predict(X_test)
 print y_predict[:20]
+print Y_test[:20]
 
 score = r2_score(Y_test, y_predict)
-
+print score
 
 # print("Doing linear regression.")
 # reg = linear_model.LinearRegression()
